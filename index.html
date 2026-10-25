@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">  
+        <title>Simple Tab Component</title>
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="Logo-container">
+                <img src="logo.png" class="logo" alt="Logo">
+                <h1 class="logo-text">Orange </br> Website</h1>
+            </div>
+            <div class="tabs-container">
+                <button class="tab-button active" data-tab="tab-1">Introduction</button>
+                <button class="tab-button" data-tab="tab-2">Features</button>
+                <button class="tab-button" data-tab="tab-3">Hobby</button>
+                <button class="tab-button" data-tab="tab-4">Contact</button>
+            </div>
+        </header>
+        <main class="main-content">
+            
+             <div id="tab-1" class="tab-content active">
+                <h2>Introduction</h2>
+                <p>Welcome to Orange Website! 🍊</p>
+                <p>
+                Hi, I'm a web developer who loves building clean, colorful and
+                user-friendly websites. This site is a place where I practice my
+                front-end skills and share a little bit about myself.
+                </p>
+                <p>
+                Just like an orange, I believe a good website should be fresh,
+                bright and full of energy.
+                </p>
+            </div>
+
+            <div id="tab-2" class="tab-content">
+                <h2>Features</h2>
+                <ul>
+                <li><strong>Responsive design:</strong> looks great on phones, tablets and desktops.</li>
+                <li><strong>Interactive tabs:</strong> switch between sections without reloading the page.</li>
+                <li><strong>Modern look:</strong> warm orange gradient inspired by the logo.</li>
+                <li><strong>Fast and lightweight:</strong> built with pure HTML, CSS and JavaScript.</li>
+                </ul>
+            </div>
+
+            <div id="tab-3" class="tab-content">
+                <h2>Hobby</h2>
+                <p>When I'm not coding, you can find me doing these things:</p>
+                <ul>
+                <li>🍹 Trying new fruit juices and desserts</li>
+                <li>📸 Taking photos of food and street scenes</li>
+                <li>🎧 Listening to music while working</li>
+                <li>📚 Learning new technologies and building small projects</li>
+                </ul>
+            </div>
+
+            <!-- Tab 4: Contact -->
+            <div id="tab-4" class="tab-content">
+                <h2>Contact</h2>
+                <p>Want to say hello or work together? Reach out to me:</p>
+                <ul>
+                <li>📧 Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                <li>💻 GitHub: <a href="https://github.com/nvtdat" target="_blank" rel="noopener">github.com/nvtdat</a></li>
+                <li>📍 Location: Ho Chi Minh City, Vietnam</li>
+                </ul>
+            </div>
+            <img src="orange.png" class="orange" alt="Orange Image">
+        </main>
+
+    </body>
+    <footer class="footer">
+        <p class="footer-text">© 2026 My Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</html>
