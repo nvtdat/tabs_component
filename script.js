@@ -15,3 +15,12 @@ buttons.forEach((button) => {
 
     });
 });
+const cookieConsent = document.getElementById('cookie-consent');
+const acceptButton = document.getElementById('accept-cookie');
+const declineButton = document.getElementById('decline-cookie');
+acceptButton.addEventListener('click', () => {
+    cookieConsent.classList.remove('active');
+})
+declineButton.addEventListener('click', () => {
+    cookieConsent.classList.remove('active');
+})

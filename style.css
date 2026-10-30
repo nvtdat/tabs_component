@@ -134,3 +134,57 @@
     z-index: -1;
 }
 
+.cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--surface);
+    color: var(--text);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.cookie-consent.active {
+    display: flex;
+}
+
+.cookie-image {
+    width: 50px;
+    height: 50px;
+}
+
+.cookie-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.cookie-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.accept-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.decline-button {
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
